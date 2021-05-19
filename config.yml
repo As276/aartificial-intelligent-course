@@ -1,0 +1,16 @@
+title: Aartificial intelligent
+description: It is very informative
+template:
+  repo: aartificial-intelligent-template
+  name: aartificial-intelligent
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
